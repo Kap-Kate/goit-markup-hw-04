@@ -416,6 +416,4 @@ img {
   text-transform: uppercase;
   color: var(--background-color-primary);
 }
-.social-links {
-    display: flex; 
-}
+
