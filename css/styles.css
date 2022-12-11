@@ -148,6 +148,9 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: url(../img/background.jpg);
+  background-size: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .main:hover {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -186,7 +189,11 @@ img {
 }
 .main,
 .footer {
+  max-width: 1600px;
+  display: block;
   background-color: var(--background-color-akcent);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*features*/
@@ -254,6 +261,10 @@ img {
 /* our team */
 .section.section-team {
   background-color: var(--background-color-secondary);
+  max-width: 1600px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 .team {
   display: flex;
@@ -292,27 +303,25 @@ img {
     margin-bottom: 30px;
 }
 
-.icons {
-    width: 44px;
-    height: 44px;
+/* .team-socials-link .item:hover {
+  border-radius: 50%;
+  cursor: pointer;
+} */
+/* .team-socials-link .item .icons:hover {
+  background-color: #2196f3;
+  fill: #188ce8;
+  border-radius: 50%;
+  cursor: pointer;
+} */
+/* .team-socials-link .link:hover {
+  fill: red; */
 }
-.team-socials-link .item {
-    width: 44px;
-    height: 44px;
-    padding: 12px;
-}
-.team-socials-link .item:hover {
-    border-radius: 50%;
-    background-color: var(--color-akcent);
-    cursor: pointer;
-}
-.team-socials-link .icons:hover {
-
-}
+/* .team-socials-link .item {
+  background: red;
+} */
 .team-socials-link .item:not(:last-child) {
     margin-right: 10px;
-}
-
+} 
 
 /* customers */
 .customers {
@@ -366,6 +375,7 @@ img {
 .button-portfolio:focus {
   color: var(--background-color-primary);
   background-color: var(--color-akcent);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .button-flex .item:not(:last-child) {
   margin-right: 8px;
@@ -373,6 +383,10 @@ img {
 .projects {
   display: flex;
   flex-wrap: wrap;
+}
+.projects-card {
+  border: 2px solid red;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .projects .item {
   flex-basis: calc((100% - 60px) / 3);
