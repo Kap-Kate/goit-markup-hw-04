@@ -303,25 +303,21 @@ img {
     margin-bottom: 30px;
 }
 
-/* .team-socials-link .item:hover {
+.team-socials-link .item:hover {
   border-radius: 50%;
   cursor: pointer;
-} */
-/* .team-socials-link .item .icons:hover {
-  background-color: #2196f3;
-  fill: #188ce8;
-  border-radius: 50%;
-  cursor: pointer;
-} */
-/* .team-socials-link .link:hover {
-  fill: red; */
 }
-/* .team-socials-link .item {
-  background: red;
-} */
 .team-socials-link .item:not(:last-child) {
     margin-right: 10px;
 } 
+.team-socials-link .icons {
+  fill: var(--icon-color);
+}
+.team-socials-link .icons:hover {
+  fill: var(--color-akcent);
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 /* customers */
 .customers {
