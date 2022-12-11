@@ -100,10 +100,13 @@ img {
 .contact-link:focus {
   color: var(--color-akcent);
 }
-/* .contact-link .envelope::before {
-    contain: "";
-    
-} */
+.icon-contact {
+  margin-right: 10px;
+  fill: var(--color-text-secondary);
+}
+.icon-contact:hover {
+  fill: var(--color-akcent);
+}
 /* site nav */
 .site-nav-list {
   display: flex;
@@ -290,8 +293,8 @@ img {
 }
 
 .icons {
-    width: 20px;
-    height: 20px;
+    width: 44px;
+    height: 44px;
 }
 .team-socials-link .item {
     width: 44px;
@@ -304,8 +307,7 @@ img {
     cursor: pointer;
 }
 .team-socials-link .icons:hover {
-    background-color: var(--color-akcent);
-    fill: ;
+
 }
 .team-socials-link .item:not(:last-child) {
     margin-right: 10px;
