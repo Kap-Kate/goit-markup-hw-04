@@ -102,11 +102,9 @@ img {
 }
 .icon-contact {
   margin-right: 10px;
-  fill: var(--color-text-secondary);
+  fill: currentColor;
 }
-.icon-contact:hover {
-  fill: var(--color-akcent);
-}
+
 /* site nav */
 .site-nav-list {
   display: flex;
@@ -298,14 +296,13 @@ img {
   text-align: center;
 }
 .team-socials-link {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
-
-.team-socials-link .item:hover {
-  border-radius: 50%;
-  cursor: pointer;
+.team-socials-link .item {
+  width: 44px;
+  height: 44px;
 }
 .team-socials-link .item:not(:last-child) {
     margin-right: 10px;
@@ -314,7 +311,17 @@ img {
   fill: var(--icon-color);
 }
 .team-socials-link .icons:hover {
-  fill: var(--color-akcent);
+  fill: var(--background-color-primary);
+}
+.team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.team-link:hover {
+  background-color: var(--color-akcent);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -340,6 +347,16 @@ img {
 .icon-customers .link {
   fill: var(--icon-color);
 }
+.icon-customers .link:hover {
+  fill: var(--color-akcent);
+  cursor: pointer;
+}
+.customers .item .icon-customers:hover{
+  cursor: pointer;
+  background-color: ;
+}
+
+
 
 /* portfolio */
 .header-portfolio {
@@ -431,6 +448,7 @@ img {
   letter-spacing: 0.03em;
 }
 .footer-title {
+  display: inline-block;
   margin-bottom: 28px;
 }
 .footer-adress {
@@ -455,10 +473,32 @@ img {
   margin-bottom: 12px;
 }
 .join {
-  display: inline-block;
+  display: block;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
   color: var(--background-color-primary);
+  margin-bottom: 20px;
 }
+.footer-list {
+  display: flex;
+}
+.footer-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-list {
+  display: flex;
+  justify-content: center;
+  fill: red;
+}
+.foter-link {
+  background-color: #2196f3;
+}
+.footer-list .icon {
+  fill: #2196f3;
+}
+.footer-list .icon:hover {
+  fill: green;
+}
+
 
