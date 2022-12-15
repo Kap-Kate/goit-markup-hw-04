@@ -143,11 +143,16 @@ img {
 }
 /* main */
 .main {
+  display: block;
+  max-width: 1600px;
+  background-color: var(--background-color-akcent);
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: url(../img/background.jpg);
-  background-size: 1600px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -186,8 +191,9 @@ img {
 .main-button:focus {
   background-color: var(--background-color-akcent-secondary);
 }
-.main,
+
 .footer {
+  /* max-width: 1600px; */
   display: block;
   background-color: var(--background-color-akcent);
   margin-right: auto;
